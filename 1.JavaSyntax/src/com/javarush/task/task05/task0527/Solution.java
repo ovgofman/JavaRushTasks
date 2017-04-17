@@ -7,7 +7,8 @@ package com.javarush.task.task05.task0527;
 public class Solution {
     public static void main(String[] args) {
         Mouse jerryMouse = new Mouse("Jerry", 12, 5);
-
+        Cat tomCat = new Cat("Tom", 60, 60);
+        Dog dogJack = new Dog("Jack", 65, 15);
         //напишите тут ваш код
     }
 
@@ -23,5 +24,30 @@ public class Solution {
         }
     }
 
-    //напишите тут ваш код
+    public static class Dog {
+        String name;
+        int heigth;
+        int tail;
+
+
+        public Dog(String name, int heigth, int tail) {
+            this.name = name;
+            this.heigth = heigth;
+            this.tail = tail;
+        }
+    }
+
+    public static class Cat {
+        String name;
+        int heigth;
+        int tail;
+
+
+        public Cat(String name, int heigth, int tail) {
+            this.name = name;
+            this.heigth = heigth;
+            this.tail = tail;
+        }
+    }
+
 }

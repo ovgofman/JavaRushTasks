@@ -9,9 +9,13 @@ import java.io.InputStreamReader;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        long l = 0;
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String s = "сумма";
+        int summary = 0;
 
-        System.out.println("Hello world No " + l + " !");
+        while (!(s = reader.readLine()).equals("сумма")) {
+            summary += Integer.parseInt(s);
+        }
+        System.out.println(summary);
     }
 }
-
